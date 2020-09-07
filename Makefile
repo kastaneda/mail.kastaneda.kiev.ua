@@ -6,6 +6,6 @@ pull:
 	git pull
 
 upload:
-	rsync -avC --exclude=Makefile --exclude=.env --delete . $(UPLOAD_TARGET)
+	rsync -avC --exclude-from=.rsync_exclude --delete . $(UPLOAD_TARGET)
 
 .PHONY: pull upload

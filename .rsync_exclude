@@ -2,3 +2,4 @@ Makefile
 .git/
 .env
 .gitignore
+.rsync_exclude
